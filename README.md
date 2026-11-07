@@ -105,15 +105,11 @@ The workbook uses calculated fields to derive the following metrics:
 - Data Visualization
 - GitHub for project hosting and documentation
 
-## Project Limitations
+## Scope & Limitations
 
-- The analysis is based on a single HR dataset.
-- The dataset does not provide employee departure dates or a defined observation period.
-- Department, education, gender and age comparisons primarily focus on departure counts and their share of total departures.
-- The job satisfaction visualization shows employee distribution by job role and satisfaction rating. It does not independently establish that satisfaction is associated with employee attrition.
-- The analysis identifies descriptive patterns but does not establish the causes of employee departures.
-- The workbook uses an Excel-based data source and does not demonstrate SQL database connections or advanced Tableau development features.
-
-## Project Context
-
-Completed as a practical Tableau project during Data Science training to develop foundational skills in dashboard development, calculated fields, KPI reporting and data visualization.
+- The analysis is based on a single HR dataset and focuses on descriptive employee attrition patterns.
+- The dataset does not include employee departure dates or a defined observation period; therefore, time-based attrition trends cannot be analysed. The overall attrition percentage represents the proportion of employee records marked as attrition cases, not a monthly or annual rate.
+- Department-wise percentages represent each department's share of total departures, not its department-specific attrition rate.
+- Education-field and gender comparisons primarily use departure counts rather than group-specific attrition rates. The age and gender visualization also displays the distribution of departures across these groups.
+- The job satisfaction visualization shows employee distribution across job roles and satisfaction ratings; it does not compare satisfaction levels between employees who left and those who stayed.
+- The analysis identifies patterns within the dataset but does not establish the causes of employee departures.
