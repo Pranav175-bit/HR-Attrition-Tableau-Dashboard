@@ -1,56 +1,119 @@
-# HR Attrition Analysis Dashboard - Tableau
+# HR Attrition Analysis Dashboard | Tableau
 
 ## Project Overview
 
-This project analyzes employee attrition using an HR dataset. The dashboard was built in Tableau to understand employee turnover patterns across departments, job roles, gender, age groups, education fields, and job satisfaction levels.
+This project explores employee attrition patterns using an HR dataset containing 1,470 employee records.
 
-This dashboard was created as part of my data analytics learning practice. The project focuses on HR attrition analysis, dashboard design, calculated fields, filters, and visual storytelling.
+The interactive Tableau dashboard examines employee departures across departments, education fields, gender and age groups. It also presents workforce KPIs, employee age distribution and job satisfaction across job roles.
 
-## Business Problem
+The project focuses on descriptive HR analysis, dashboard development, calculated fields and data visualization.
 
-Employee attrition can increase hiring costs, reduce productivity, and affect team stability. HR teams need a clear way to monitor attrition patterns and identify which employee groups are more likely to leave, based on factors such as department, job role, age group, gender, education field, and job satisfaction.
+## Business Objective
 
-## Objective
+To explore the distribution of employee departures across different workforce segments and identify patterns in the recorded attrition data.
 
-The objective of this project is to analyze attrition trends and provide useful insights that can help HR teams improve employee retention.
+## Dataset
 
-## Dashboard Features
+| Description | Details |
+|---|---|
+| Employee Records | 1,470 |
+| Data Format | Excel |
+| Data Categories | Employee demographics, department, education, job role, attrition status and job satisfaction |
 
-* KPI cards for employee count, attrition count, attrition rate, active employees, and average age
-* Department-wise attrition analysis
-* Attrition analysis by gender
-* Number of employees by age group
-* Education field-wise attrition analysis
-* Job satisfaction rating by job role
-* Education filter for interactive analysis
-
-## Key Insights
-
-* The dashboard helps identify departments and job roles with higher attrition.
-* Age group and education field analysis help understand which employee segments are more affected.
-* Job satisfaction analysis helps explore the relationship between employee satisfaction and attrition.
-* Gender and age group analysis helps compare attrition patterns across different employee groups.
-
-## Business Solution
-
-This dashboard helps HR teams monitor employee attrition patterns and identify high-risk employee groups. By analyzing attrition across departments, job roles, age groups, gender, education fields, and job satisfaction levels, HR teams can take targeted actions to improve employee engagement, address workload or career growth concerns, and develop retention strategies for groups with higher attrition.
-
-## Tools Used
-
-* Tableau
-* Excel
-* GitHub
-
-## Dataset Source
-
-This project uses an anonymized HR attrition dataset for educational and portfolio purposes.
-
-## Files Included
-
-* `HR_Attrition_Dashboard.twbx` - Tableau packaged workbook
-* `HR_Data.xlsx` - HR attrition dataset used for analysis
-* `dashboard_screenshot.png` - Dashboard preview
+The dataset is used for educational and analytical practice. Its original publisher and reuse licence have not yet been independently verified.
 
 ## Dashboard Preview
 
-![Dashboard Preview](dashboard_screenshot.png)
+![HR Attrition Analysis Dashboard](dashboard_screenshot.png)
+
+## Dashboard Contents
+
+The Tableau workbook contains one interactive dashboard built using seven worksheets.
+
+| Worksheet | Analysis |
+|---|---|
+| KPI | Total employees, attrition count, overall attrition proportion, active employees and average age |
+| Department-wise Attrition | Departure counts by department and share of total departures |
+| Education Field-wise Attrition | Departure counts across education fields |
+| Gender-wise Attrition | Comparison of departure counts between male and female employees |
+| Age and Gender Analysis | Distribution of departures across age groups and gender |
+| Job Satisfaction | Employee distribution across job roles and satisfaction ratings |
+| Age Distribution | Distribution of employees across age groups |
+
+**Interactive Filter:** An Education dropdown filter allows users to explore the dashboard by education category.
+
+## Key Findings
+
+### Overall Workforce
+
+- Total employees: **1,470**
+- Employees who left: **237**
+- Active employees: **1,233**
+- Overall attrition proportion: **16.12%**
+
+### Department-wise Departures
+
+| Department | Departures | Share of Total Departures |
+|---|---:|---:|
+| R&D | 133 | 56.12% |
+| Sales | 92 | 38.82% |
+| HR | 12 | 5.06% |
+
+R&D accounted for the largest share of recorded departures, followed by Sales and HR.
+
+### Age-group Analysis
+
+- Employees aged **25–34** recorded the highest number of departures, with **112 cases**.
+- The dashboard also compares departure distributions across age groups and gender.
+
+### Education Field Analysis
+
+- Life Sciences recorded the highest number of departures (**89**).
+- Medical followed with **63** departures.
+- Marketing accounted for **35** departures.
+
+### Gender Analysis
+
+- Male employees accounted for **150** departures.
+- Female employees accounted for **87** departures.
+
+### Job Satisfaction
+
+The dashboard displays employee distribution across job satisfaction ratings and job roles. This provides a descriptive overview of satisfaction levels across roles but does not independently establish a relationship between satisfaction and attrition.
+
+## Tableau Calculations
+
+The workbook uses calculated fields to derive the following metrics:
+
+| Calculated Field | Description |
+|---|---|
+| Attrition Count | Counts employees recorded with an attrition status of Yes |
+| Attrition Rate | Calculates attrition count as a proportion of total employee records |
+| Active Employees | Calculates the number of employees remaining |
+| Average Age | Calculates the average employee age |
+| Age Group | Categorizes employees into age groups |
+| Attrition Count and Percentage | Uses a Tableau table calculation to display departure counts and their share of total departures |
+
+**Metric clarification:** Department-wise percentages represent each department's share of total departures, not its department-specific attrition rate. The overall attrition proportion is calculated from the available employee records; the dataset does not specify a departure observation period.
+
+## Tools & Technologies
+
+- Tableau Desktop
+- Microsoft Excel
+- Tableau Calculated Fields
+- Table Calculations
+- Data Visualization
+- GitHub for project hosting and documentation
+
+## Project Limitations
+
+- The analysis is based on a single HR dataset.
+- The dataset does not provide employee departure dates or a defined observation period.
+- Department, education, gender and age comparisons primarily focus on departure counts and their share of total departures.
+- The job satisfaction visualization shows employee distribution by job role and satisfaction rating. It does not independently establish that satisfaction is associated with employee attrition.
+- The analysis identifies descriptive patterns but does not establish the causes of employee departures.
+- The workbook uses an Excel-based data source and does not demonstrate SQL database connections or advanced Tableau development features.
+
+## Project Context
+
+Completed as a practical Tableau project during Data Science training to develop foundational skills in dashboard development, calculated fields, KPI reporting and data visualization.
